@@ -39,6 +39,10 @@ The GroupAdmin class implement the member interface. <br />
 the GroupAdmin class has multiple methods used on an undoablestringbuilder, such as; append ,delete,insert and undo methods all form the UndoableStringBuilder class. <br />
 after every operation we used the function notifyAllMembers. this method is going through the list of members and for each member calls the Update method, which is being operated in each member in the ConcreteMember class. 
 
+### _ConcreteMember class_ 
+The ConcreteMember class implement the Member interface.  <br />
+This class represents a Member from the group administered by a GroupAdmin. while being able to register and get updates from a GroupAdmin, concreteMember has a name and own copy of the group's UndoableStringBuilder object.  <br />
+When the update method is called, the ConcreteMember class updates its copy with the current state of the UndoableStringBuilder object.
 
 
 
