@@ -44,7 +44,11 @@ The ConcreteMember class implement the Member interface.  <br />
 This class represents a Member from the group administered by a GroupAdmin. while being able to register and get updates from a GroupAdmin, concreteMember has a name and own copy of the group's UndoableStringBuilder object.  <br />
 When the update method is called, the ConcreteMember class updates its copy with the current state of the UndoableStringBuilder object.
 
+## How to use the project 
+to run our project, you need to use the groupAdmin and concreteMember classes. <br />
+first, you''ll need to build a new groupAdmin and concreteMemeber objects. then register the concreteMemeber using the groupAdmin (with the register method. finally, call the methods you want in order to modigy the  UndoableStringBuilder object, and the concreteMember object will notify the changes and update its copy automatically.
 
+## Secong part - following the objects size using heap
 
 
 
