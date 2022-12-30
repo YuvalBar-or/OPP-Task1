@@ -48,20 +48,18 @@ When the update method is called, the ConcreteMember class updates its copy with
 to run our project, you need to use the groupAdmin and concreteMember classes. <br />
 first, you''ll need to build a new groupAdmin and concreteMemeber objects. then register the concreteMemeber using the groupAdmin (with the register method. finally, call the methods you want in order to modigy the  UndoableStringBuilder object, and the concreteMember object will notify the changes and update its copy automatically.
 
-## Secong part - following the objects size using heap
+## Secong part - following the objects size in the heap
 the test package includes the following classes : 
 * Tests
 * JvmUtillities 
 
-
-
-
-In TestMembers class we'd tested the functionality of the update method of the ConcreteMember class and the functionality of GroupAdmin and his abilities and how it can handle different situations including passing an already registered member.
-
-In addition, we asked to track the size of the object in the heap. We found out that one of the parameters for checking the efficiency of the code is the size of the object in the JVM memory. we saw that in the JvmUtilities class there are 3 static methods that we used to test the efficiency.
+in Tests class we tested the update method of the ConcreteMember class and the functionality of GroupAdmin , his abilities , and how it can handle different situations including passing an already registered member.<br />
+In addition, we tracked the size of the object in the heap. We found out that one of the parameters for checking the efficiency of the code is the size of the object in the JVM memory.<br />
+we saw that in the JvmUtilities class there are 3 static methods that we used to test the efficiency.
 
 * The method objectFootprint : shows all the references that the object contains the size of each reference.
 * The method objectTotalSize : show the total size of the object. This method is the most relevant to us in this assignment.
+* The jvmInfo method : show the process ID of the JVM and the total amount of memory for the benefit of the program.
 
 
 
