@@ -37,6 +37,7 @@ Etc.
 ### _GroupAdmin class_ 
 The GroupAdmin class implement the member interface. <br />
 the GroupAdmin class has multiple methods used on an undoablestringbuilder, such as; append ,delete,insert and undo methods all form the UndoableStringBuilder class. <br />
+after every operation we used the function notifyAllMembers. this method is going through the list of members 
 
  
 
